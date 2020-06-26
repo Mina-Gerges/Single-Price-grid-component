@@ -1,0 +1,28 @@
+/* @import url("(https://fonts.google.com/specimen/Karla)") */
+
+/*rgb(222,235,245)*/
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas: 
+    ". . . ."
+    ". div1 div1 ."
+    ". div2 div3 ."
+    ". . . .";
+}
+    
+.div1 { 
+    grid-area: div1; 
+}
+
+.div2 { 
+    grid-area: div2; 
+}
+
+.div3 { 
+    grid-area: div3;
+ }
