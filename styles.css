@@ -1,6 +1,9 @@
 /* @import url("(https://fonts.google.com/specimen/Karla)") */
 
-/*rgb(222,235,245)*/
+
+body {
+    background-color: rgb(222,235,245);
+}
 
 .parent {
     display: grid;
@@ -10,19 +13,35 @@
     grid-row-gap: 0px;
     grid-template-areas: 
     ". . . ."
-    ". div1 div1 ."
-    ". div2 div3 ."
+    ". upperDiv upperDiv ."
+    ". leftDiv rightDiv ."
     ". . . .";
 }
     
-.div1 { 
-    grid-area: div1; 
+.parent * {
+    padding: 20px;
 }
 
-.div2 { 
-    grid-area: div2; 
+.upperDiv { 
+    grid-area: upperDiv;
+    background-color: white;
+    border-radius: 5px 5px 0 0; 
 }
 
-.div3 { 
-    grid-area: div3;
+.leftDiv { 
+    grid-area: leftDiv;
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0 0 0 5px; 
+}
+
+.rightDiv { 
+    grid-area: rightDiv;
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0 0 5px 0 ; 
+    opacity: 0.75; 
+ }
+
+ p {
+    line-height: 20px;   /* within paragraph */
+    margin: -15px; /* between paragraphs */
  }
