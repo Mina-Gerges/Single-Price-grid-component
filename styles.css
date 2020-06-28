@@ -1,21 +1,24 @@
-/* @import url("(https://fonts.google.com/specimen/Karla)") */
-
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 
 body {
     background-color: rgb(222,235,245);
+    height: 100%;
 }
 
 .parent {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-areas: 
-    ". . . ."
-    ". upperDiv upperDiv ."
-    ". leftDiv rightDiv ."
-    ". . . .";
+    "upperDiv upperDiv "
+    "leftDiv rightDiv ";
+    box-shadow: 30px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 30%;
+    margin-left: 30%;
 }
     
 .parent * {
@@ -41,7 +44,87 @@ body {
     opacity: 0.75; 
  }
 
+ footer {
+        margin-top: 30px;
+        bottom: 0;
+        width: 100%;
+}
+
+ #dollar {
+     text-align: left;
+     padding: 0px;
+     font: 30px 'Karla', sans-serif;
+     margin-right: -10px;
+ }
+
  p {
     line-height: 20px;   /* within paragraph */
-    margin: -15px; /* between paragraphs */
+    margin: -20px; /* between paragraphs */
  }
+
+ .upperClose {
+     margin-bottom: 0px;
+ }
+
+ .lowerClose {
+    margin-top: -35px;
+}
+
+.halfScreen {
+    width: 75%;
+}
+ /* Color classes  */
+
+ #cyan {
+    color: hsl(179, 62%, 43%);
+ }
+
+ #brightYellow {
+    color: hsl(71, 73%, 54%);
+ }
+
+ #gray {
+    color: hsl(218, 22%, 67%);
+ }
+
+ .white {
+    color: white; 
+ }
+
+ .transparentWhite {
+    color: white;
+    opacity: 0.60;
+ }
+
+ /* Font classes  */
+
+ .normal {
+    font: normal 16px 'Karla', sans-serif;
+ }
+
+ .bold {
+    font: bold 16px 'Karla', sans-serif;
+ }
+
+ .title {
+     font: 20px 'Karla', sans-serif;
+ }
+
+ /* Mobile changes */
+
+ @media only screen and (max-width: 375px) {
+
+    .parent {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        grid-template-areas:
+        "upperDiv"
+        "leftDiv "
+        "rightDiv ";
+        box-shadow: 30px;
+        margin: 5% ;
+    }
+  }
