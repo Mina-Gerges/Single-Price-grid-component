@@ -33,6 +33,10 @@ body {
 
 .leftDiv { 
     grid-area: leftDiv;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
     background-color: hsl(179, 62%, 43%);
     border-radius: 0 0 0 5px; 
 }
@@ -72,6 +76,20 @@ body {
 
 .halfScreen {
     width: 75%;
+}
+
+.cta {
+    background: hsl(71, 73%, 54%); 
+    color: white; 
+    height: 50wh;
+    text-align: center;
+    border-radius: 5px; 
+    text-decoration: none;
+}
+
+.cta:hover {
+    background: white; 
+    color: hsl(71, 73%, 54%); 
 }
  /* Color classes  */
 
