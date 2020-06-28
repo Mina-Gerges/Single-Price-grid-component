@@ -130,7 +130,7 @@ body {
 
  /* Mobile changes */
 
- @media only screen and (max-width: 375px) {
+ @media only screen and (max-device-width: 375px) {
 
     .parent {
         display: grid;
